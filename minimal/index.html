@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3DHOP Model Viewer</title>
+    <script type="text/javascript" src="3dhop/3dhop.js"></script>
+    <style>
+        body { margin: 0; }
+        #viewer { width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body>
+    <div id="viewer"></div>
+    <script type="text/javascript">
+        var viewer = new Viewer('viewer');
+        viewer.addMesh({
+            id: "model",
+            src: "models/model.nxz", // Change this path if using .nxs
+            color: [200, 200, 200]
+        });
+    </script>
+</body>
+</html>
